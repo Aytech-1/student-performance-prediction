@@ -1,57 +1,109 @@
-body {
-    background-color: #F8F8F8;
-    font-family: Arial, sans-serif;
+/* Reset & base */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-h1 {
-    font-size: 32px;
+body, html {
+    height: 100%;
+    background-color: #f4f7f8;
     color: #333;
-    margin-bottom: 20px;
 }
 
-.content-box {
-    background-color: #f5f5f5;
+/* Wrapper to use full viewport */
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header */
+.header {
+    background-color: #4A90E2;
+    color: #fff;
+    text-align: center;
+    padding: 20px 15px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.header .subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Main */
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
     padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    gap: 20px;
 }
 
-p {
-    color: #666;
-    line-height: 1.5;
+
+.card {
+    flex:  400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    min-width: 280px;
+    height: 250px;
+    line-height: 25px;
 }
 
+.card h2{
+   color:  #4A90E2;
+   padding-bottom: 15px;
+}
+
+
+/* Buttons */
 .button-container {
     display: flex;
-    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
 }
 
 .btn {
-    display: inline-block;
-    padding: 12px 20px;
-    background-color: #337ab7;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    padding: 10px 20px;
     text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-    margin: 0 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid #4A90E2;
+    color: #4A90E2;
+    text-align: center;
 }
 
 .btn:hover {
-    background-color: #286090;
+    background-color: #4A90E2;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #4A90E2;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #357ABD;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #666;
 }
