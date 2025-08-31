@@ -1,30 +1,21 @@
-## Student Performance Prediction
+# Student Performance Prediction
 
 This project aims to predict student performance based on various factors such as gender, ethnicity, parental level of education, lunch type, test preparation course, and exam scores. The machine learning model trained on a dataset of student information can provide insights into predicting a student's performance in mathematics.
 
 ## Table of Contents
 
--Introduction
-
--Features
-
--Installation
-
--Usage
-
--Dataset
-
--Model Training
-
--Results
-
--Contributing
-
--License
-
--Project Structure
-
--Author
+- [Introduction](#introduction)  
+- [Note](#note-this-project-is-for-educational-purposes-only)  
+- [Features](#features)  
+- [Installation](#installation)  
+- [Usage](#usage)  
+- [Dataset](#dataset)  
+- [Model Training](#model-training)  
+- [Results](#results)  
+- [Contributing](#contributing)  
+- [License](#license)  
+- [Project Structure](#project-structure)  
+- [Author](#author)  
 
 ## Introduction
 
@@ -36,16 +27,15 @@ The Student Exam Performance Predictor project is developed to showcase the appl
 
 ## Features
 
-Predicts student performance in mathematics based on multiple factors.
-
-Provides insights into the influence of gender, ethnicity, parental level of education, lunch type, and test preparation course on student performance.
-
-User-friendly interface for inputting student information and obtaining predictions.
+- Predicts student performance in mathematics based on multiple factors.  
+- Provides insights into the influence of gender, ethnicity, parental level of education, lunch type, and test preparation course on student performance.  
+- User-friendly interface for inputting student information and obtaining predictions.  
 
 ## Installation
 
 Clone the repository:
 
+```bash
 git clone https://github.com/Aytech-1/student-performance-prediction.git
 
 
@@ -92,18 +82,20 @@ Contributions are welcome! If you have any ideas, suggestions, or bug reports, p
 This project is licensed under the MIT License
 .
 
-Project Structure
-├───artifacts
-├───catboost_info
-│   └───learn
-├───Notebook
-│   └───data
-├───src
-│   ├───components
-│   └───pipeline
-├───static
-│   └───css
-└───templates
+## Project Structure
+student-performance-prediction/
+├── artifacts/          # Contains artifacts generated during the model training process
+├── catboost_info/      # Stores CatBoost model information
+│   └── learn/
+├── Notebook/           # Notebooks used for data exploration and analysis
+│   └── data/
+├── src/                # Source code for the project
+│   ├── components/     # Components and modules used in the project
+│   └── pipeline/       # Data processing and model training pipeline
+├── static/             # Static files used in the web application (CSS, etc.)
+│   └── css/
+└── templates/          # HTML templates used in the web application
+
 
 
 -artifacts: Contains artifacts generated during the model training process.
@@ -124,8 +116,13 @@ Project Structure
 
 ## Author
 
-👤 Aytech-1
+👤 ADEYEMI AYOBAMI SAMSON
 
+📧 Email: adeyemiayobami273@gmail.com
+
+📞 Phone: 09030019355
+
+🌍 Location: Abeokuta, Ogun State, Nigeria
 GitHub: @Aytech-1
 
 Feel free to reach out with any questions or feedback regarding the project.
